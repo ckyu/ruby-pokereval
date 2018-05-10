@@ -91,6 +91,7 @@ module PokerEvalAPI
 	attach_function :TextToPokerEval, [:string], CardMask.by_value
 	attach_function :StdDeck_StdRules_EVAL_TYPE, [CardMask.by_value, :int], :int
 	attach_function :StdDeck_StdRules_EVAL_N, [CardMask.by_value, :int], :int
+	attach_function :StdDeck_OmahaHi_EVAL, [CardMask.by_value, CardMask.by_value], :int
 	attach_function :handStrength, [CardMask.by_value, CardMask.by_value], :double
 	attach_function :handPotential, [:string, :string, :int], HandPotential.by_value
 	attach_function :evalOuts, [:string, :int, :string, :int, :int, :completion_function], :int

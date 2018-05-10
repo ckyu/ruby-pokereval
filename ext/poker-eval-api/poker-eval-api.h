@@ -7,3 +7,4 @@ typedef struct {
 	float ppot;
 	float npot;
 } HandPotential;
+
